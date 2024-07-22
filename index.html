@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UI5 Web Components w/o Framework</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="systemjs-packagemap" src="/packagemap.json"></script>
+    <script src="/node_modules/systemjs/dist/system.js"></script>
+    <!-- <script src="/system.config.js"></script> -->
+</head>
+
+<body>
+    <ui5-button>Hello world!</ui5-button>
+    <script type="module">
+        System.import('@ui5/webcomponents/dist/Button.js')
+            .then(() => {
+                console.log('UI5 Button component loaded successfully');
+            })
+            .catch((err) => {
+                console.error('Error loading UI5 Button component:', err);
+            });
+    </script>
+</body>
+
+</html>

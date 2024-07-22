@@ -1,0 +1,10 @@
+{
+    "imports": {
+        "@ui5/webcomponents/": "/node_modules/@ui5/webcomponents/dist/"
+    },
+    "packages": {
+        "@ui5/webcomponents": {
+            "defaultExtension": "js"
+        }
+    }
+}
